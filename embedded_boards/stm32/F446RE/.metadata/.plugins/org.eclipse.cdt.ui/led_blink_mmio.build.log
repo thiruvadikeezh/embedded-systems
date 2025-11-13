@@ -1,0 +1,10 @@
+14:19:17 **** Incremental Build of configuration Debug for project led_blink_mmio ****
+make -j4 all 
+arm-none-eabi-size  led_blink_mmio.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1000	      4	   1572	   2576	    a10	led_blink_mmio.elf
+Finished building: default.size.stdout
+ 
+
+14:19:18 Build Finished. 0 errors, 0 warnings. (took 1s.245ms)
+
