@@ -1,0 +1,2 @@
+/home/sudharsan/Desktop/embedded/Rpi_Pico/RPI_pico/Pico_2W/Examples/C_C++/gpio_freertos/build/_deps/picotool-build/enc_bootloader/CMakeFiles/edit_cache.dir
+/home/sudharsan/Desktop/embedded/Rpi_Pico/RPI_pico/Pico_2W/Examples/C_C++/gpio_freertos/build/_deps/picotool-build/enc_bootloader/CMakeFiles/rebuild_cache.dir

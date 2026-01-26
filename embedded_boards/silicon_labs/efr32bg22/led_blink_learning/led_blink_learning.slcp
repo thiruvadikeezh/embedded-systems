@@ -1,0 +1,51 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: led_blink_learning
+label: led_blink_learning
+description: |
+  This example project shows an empty configuration that can be used as a starting point to add components and functionality.
+category: Example|Platform
+filter:
+- name: Device Type
+  value: [SoC]
+- name: MCU
+  value: [32-bit MCU]
+- name: Project Difficulty
+  value: [Beginner]
+package: platform
+quality: production
+readme:
+- {path: readme.md}
+- {path: readme.md}
+source:
+- {path: app.c}
+- {path: main.c}
+include:
+- path: .
+  file_list:
+  - {path: app.h}
+sdk: {id: gecko_sdk, version: 4.5.0}
+toolchain_settings: []
+component:
+- {id: EFR32BG22C224F512IM40}
+- {id: app_button_press}
+- {id: brd4108a}
+- {id: device_init}
+- {id: iostream_retarget_stdio}
+- {id: iostream_usart_core}
+- instance: [btn0]
+  id: simple_button
+- instance: [led0]
+  id: simple_led
+- {id: sl_system}
+- {id: sleeptimer}
+- {id: stdio}
+- {id: uartdrv_core}
+- instance: [vcom]
+  id: uartdrv_eusart
+- {id: udelay}
+define:
+- {name: DEBUG_EFM}
+ui_hints:
+  highlight:
+  - {path: readme.md, focus: true}
+
